@@ -159,9 +159,9 @@
             font-style: italic;
         }
         .punch-line{
-            max-width: 600px;
-            width: 100%;
+           width: clamp(320px,70vw,600px);
             margin-inline: auto;
+            
         }
 
         h5.note {
@@ -181,6 +181,29 @@
                 border-right: none;
             }
         }
+        @media (max-width: 576px){
+            .body-layout{
+                flex-direction: column;
+            }
+            h2 {
+            font-size: 18px;
+            color: #575756;
+            font-family: "Open Sans", sans-serif;
+        }
+
+        h3 {
+            font-size: 16px;
+            line-height: 1.5rem;
+            margin-bottom: 0px;
+            color: #465360;
+            font-family: "Open Sans", sans-serif;
+        }
+
+        p,ul,li{
+            font-size: 14px;
+        }
+
+        } 
     </style>
     <body>
         <div class="resume">
