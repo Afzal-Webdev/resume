@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Resume</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Mooli&family=Open+Sans:ital,wght@0,400;0,600;1,400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <style>
+        /* Reset some default styles */
+        body,
+        h1,
+        h2,
+        h3,
+        p,
+        ul,
+        li {
+            margin: 0;
+            padding: 0;
+            font-family: "Poppins", sans-serif;
+        }
+
+        /* Set a background color and font styles for the entire document */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        /* Center the resume horizontally */
+        .resume {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        /* Style the header section */
+        header {
+            text-align: center;
+            background-color: #0d0d0d;
+            color: #fff;
+            padding: 20px 0;
+        }
+
+        header h1 {
+            font-size: 36px;
+        }
+
+        header p {
+            font-size: 18px;
+        }
+
+        /* Create a two-column layout for the main content */
+        .resume-content {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .body-layout {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        .body-layout > article {
+            flex: 0 0 48.5%;
+        }
+
+        /* Style the left column (experience, education) */
+        .left-column {
+            flex: 1;
+            padding: 20px;
+        }
+
+        /* Style the right column (skills, awards, languages, moocs) */
+        .right-column {
+            flex: 1;
+            padding: 20px;
+        }
+
+        /* Style headings */
+        h2 {
+            font-size: 30px;
+            color: #575756;
+            font-family: "Open Sans", sans-serif;
+        }
+
+        h3 {
+            font-size: 20px;
+            margin-bottom: 0px;
+            color: #465360;
+            font-family: "Open Sans", sans-serif;
+        }
+        h3::before {
+            content: "✌";
+            /* position: absolute; */
+            margin-right: 1rem;
+            color: black;
+        }
+        h2::before {
+            content: "👉";
+            /* position: absolute; */
+            margin-right: 1rem;
+        }
+
+        /* Style job titles */
+        .job-title,
+        .education-info {
+            font-weight: 300;
+            color: black;
+
+            text-decoration: underline;
+        }
+
+        /* Style lists */
+        ul {
+            list-style-type: circle;
+            padding-left: 20px;
+        }
+
+        /* Style list items */
+        li {
+            margin-bottom: 5px;
+        }
+
+        /* Style education info */
+        /* .education-info {
+            font-weight: bold;
+        } */
+
+        /* Add some spacing to the awards section */
+        .awards p {
+            margin-bottom: 10px;
+        }
+
+        /* Style the languages and MOOCs sections */
+        .languages ul,
+        .moocs ul {
+            list-style-type: circle;
+            padding-left: 20px;
+        }
+
+        .introduction {
+            text-align: justify;
+            margin-top: 2rem;
+        }
+
+        strong {
+            font-family: "Open Sans", sans-serif;
+            font-weight: bold;
+            color: #216dbf;
+            font-style: italic;
+        }
+        .punch-line{
+            max-width: 600px;
+            width: 100%;
+            margin-inline: auto;
+        }
+
+        h5.note {
+            font-family: "Poppins", sans-serif;
+            font-weight: 400;
+            margin: 0px;
+        }
+
+        /* Add media query for responsiveness */
+        @media (max-width: 768px) {
+            .resume-content {
+                flex-direction: column;
+            }
+
+            .left-column,
+            .right-column {
+                border-right: none;
+            }
+        }
+    </style>
+    <body>
+        <div class="resume">
+            <header>
+                <h1>Muhammad Afzal</h1>
+                <p hidden>UI Engineer | Accessibility | UX | Dialectic Thinking</p>
+                <P class="punch-line">A dialectic thinker who loves to engineer User Interfaces and AI</P>
+            </header>
+
+            <section class="introduction">
+                <h2>Introduction</h2>
+                <p>
+                    I spent four years of my life exploring Computer Science
+                    deep down in its core. The story started from the four
+                    pillars of Object-oriented programming, moved through the
+                    hidden layers of the TCP/IP model fantasizing about modern
+                    cryptographic techniques in the picture of Information
+                    Security, adding a flavor of Big Data in the form of Hadoop.
+                    In the middle of that time frame, managed to raise seed
+                    funding for my first startup from the provincial government
+                    applying the lean startup methodology. Played a lot with the
+                    Internet of things on Arduino UNO by building several
+                    projects, WEB 3.0 and NFTs were not known to the public when
+                    I inquired about Merkel trees, the heart of blockchain.
+                    Meanwhile, the realm of mathematical philosophy immensely
+                    touched my heart and I fell in love with mathematical
+                    modeling. Thus started exquisitely with Artificial
+                    Intelligence, probed seven wonders of it, and finally
+                    graduated by explaining the true essence of mathematical
+                    modeling in the context of Neural Networks.
+                </p>
+            </section>
+
+            <section class="body-layout">
+                <article>
+                    <section class="experience">
+                        <h2>EXPERIENCE</h2>
+                        <article>
+                            <h3>Nextbridge - Johar Town, Lahore</h3>
+                            <p class="job-title">
+                                UI Engineer (8th Feb 2023 - Present)
+                            </p>
+                            <ul>
+                                <li>
+                                    Building <strong>UI Components</strong> and
+                                    layouts using
+                                    <strong>Material UI</strong> and React JS in
+                                    a Next.js app.
+                                </li>
+                                <li>
+                                    Utilizing CSS and SCSS to create responsive
+                                    web apps.
+                                </li>
+                                <li>
+                                    Working with React Router,
+                                    <strong> Styled Components </strong>, Redux,
+                                    and Formik.
+                                </li>
+                            </ul>
+                        </article>
+                        <article>
+                            <h3>ILSA INTERACTIVE - Johar Town, Lahore</h3>
+                            <p class="job-title">
+                                Frontend Developer | SEO Specialist (15th Nov
+                                2021 - Jan 2023)
+                            </p>
+                            <ul>
+                                <li>
+                                    Transforming <strong>Figma</strong> designs
+                                    into <strong>pixel-perfect</strong>
+                                    <strong>HTML</strong> and
+                                    <strong>CSS</strong> templates.
+                                </li>
+                                <li>
+                                    Creating high-quality HTML files based on
+                                    <strong>HTML5 W3C standards</strong>.
+                                </li>
+                                <li>
+                                    Using CSS and CSS preprocessors
+                                    <strong>(SCSS)</strong> for
+                                    <strong>responsive layouts</strong>.
+                                </li>
+                                <li>
+                                    Implementing
+                                    <strong>accessibility </strong>options using
+                                    ARIA and other HTML attributes.
+                                </li>
+                                <li>
+                                    Writing JavaScript for
+                                    <strong>DOM manipulation</strong> and
+                                    following
+                                    <strong>best SEO practices</strong>.
+                                </li>
+                                <li>
+                                    Coding <strong>email templates</strong> in
+                                    <strong> pure table structure. </strong>
+                                </li>
+                            </ul>
+                        </article>
+                    </section>
+                    <section class="education">
+                        <h2>EDUCATION</h2>
+                        <article>
+                            <h3>University of Haripur, Haripur</h3>
+                            <p class="education-info">
+                                BSCS (September 2017 - June 2021, CGPA 3.7)
+                            </p>
+                            <p>
+                                Significant areas of interest: Web Engineering,
+                                Machine Learning, The Internet of Things &
+                                Computer Networks.
+                            </p>
+                        </article>
+                        <article>
+                            <h3>Bright Vision School & College, Haripur</h3>
+                            <p class="education-info">
+                                FSc (April 2015 - August 2017)
+                            </p>
+                        </article>
+                    </section>
+
+                    <section class="moocs">
+                        <h2>MOOCs</h2>
+                        <ul>
+                            <li>
+                                CS50’s Introduction to Artificial Intelligence
+                                with Python [Harvard]
+                            </li>
+                            <li>Intro to Deep Learning [MIT]</li>
+                            <li>Introduction to Data Science [DataCamp]</li>
+                            <li>Cloudera Certified Associate [KPITB]</li>
+                            <li>Python Bootcamp [Udemy]</li>
+                            <li>Machine Learning [StatQuest]</li>
+                            <li>Pandas & Numpy [Enthought]</li>
+                            <li>SQL [The Magic of SQL]</li>
+                        </ul>
+                    </section>
+                </article>
+
+                <article>
+                    <section class="skills">
+                        <h2>SKILLS</h2>
+
+                        <h3 class="skills-category">Web Development</h3>
+                        <ul>
+                            <li>HTML5, CSS3, JavaScript, jQuery</li>
+                            <li>
+                                React JS / Next.js, Material UI, Styled
+                                Components
+                            </li>
+                            <li>Bootstrap, SASS, Tailwind</li>
+                            <li>Canvas API, Sprite Sheet Animations, P5.js</li>
+                            <li>PHP, SQL, Node.js</li>
+                            <li>Git, Trello, Technical SEO</li>
+                        </ul>
+
+                        <h3 class="skills-category">
+                            Machine Learning / Data Science / Big Data
+                        </h3>
+
+                        <ul>
+                            <li>
+                                <strong>Supervised Learning</strong> -
+                                Regression - SVM - Decision Trees
+                            </li>
+                            <li>
+                                <strong>Unsupervised Learning</strong> - K-Means
+                                Clustering - Hierarchical Clustering - PCA
+                            </li>
+                            <li><strong>Big Data</strong> - Hadoop</li>
+                            <li>Python</li>
+
+                            <li>Pandas</li>
+                            <li>Numpy</li>
+                            <li>Matplotlib</li>
+                        </ul>
+
+                        <h3 class="skills-category">Writing</h3>
+
+                        <ul>
+                            <li>Report Writing</li>
+                            <li>Content Writing</li>
+                        </ul>
+
+                        <h3 class="skills-category">Business</h3>
+
+                        <ul>
+                            <li>Lean Business Model</li>
+                            <li>Feasibility Report</li>
+                        </ul>
+
+                        <h5 hidden class="note">
+                            <strong>Note :</strong> There are 3 more skill
+                            categories that are not mentioned here.
+                        </h5>
+                    </section>
+                    <section class="awards">
+                        <h2>AWARDS</h2>
+                        <ul>
+                            <li>
+                                <strong>Hult Prize 2019 (On-Campus):</strong>
+                                Pitched the idea of a Social app and stood first
+                                among 44 teams.
+                            </li>
+                            <li>
+                                <strong>KP Impact Challenge:</strong> Won seed
+                                funding from the provincial
+                                government; trained by serial entrepreneurs.
+                                Certified Entrepreneur from <strong>LUMS.</strong>
+                            </li>
+                            <li>
+                                <strong>Ambassador from KPITB:</strong>
+                                Nominated as an ambassador from the provincial
+                                board of Information Technology.
+                            </li>
+                        </ul>
+                    </section>
+                    <section class="languages">
+                        <h2>LANGUAGES</h2>
+                        <ul>
+                            <li>English - Fluent</li>
+                            <li>Urdu - Hindko - Punjabi</li>
+                        </ul>
+                    </section>
+                
+                </article>
+            </section>
+
+            <section class="academic-achievements">
+                <h2>Academic Achievements</h2>
+                <article>
+                    <h3>
+                        Breaking the Core of Calculus for Machine Learning —
+                        Thesis
+                    </h3>
+                    <p>
+                        Cracked the fundamentals of calculus by building the
+                        intuition of mathematical logic and then gradually
+                        introducing Gradient Descent’s core idea.
+                    </p>
+
+                    <h3>Vehicle Tracking System by using Arduino — IoT</h3>
+                    <p>
+                        I have assisted fellows in Building a vehicle tracking
+                        system for the university’s transport service.
+                    </p>
+                    <h3>
+                        A Brief History of Computer Networks — Pdf Published
+                    </h3>
+                    <p>
+                        I have composed the historical nitty-gritty of computer
+                        networks and the evolution of the internet. It is
+                        written in Urdu and is being distributed freely over the
+                        internet.
+                    </p>
+                    <h3>
+                        Artificial Intelligence, What, Why, & How — 5 articles
+                        have been published.
+                    </h3>
+                </article>
+            </section>
+        </div>
+    </body>
+</html>
